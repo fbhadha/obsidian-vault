@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("Decisions")'
+    - 'decided-by.toString().contains(this.file.name)'
+views:
+  - type: table
+    name: Related Decisions
+    order:
+      - property: date
+properties:
+  status:
+    displayName: Status
+  date:
+    displayName: Date
+  project:
+    displayName: Project

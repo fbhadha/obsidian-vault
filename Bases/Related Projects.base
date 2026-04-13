@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("Projects")'
+    - 'stakeholders.toString().contains(this.file.name)'
+views:
+  - type: table
+    name: Related Projects
+    order:
+      - property: status
+properties:
+  status:
+    displayName: Status
+  team:
+    displayName: Team
+  started:
+    displayName: Started

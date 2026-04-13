@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("People")'
+    - 'this.file.hasLink(file.file)'
+views:
+  - type: table
+    name: Related People
+    order:
+      - property: role
+properties:
+  role:
+    displayName: Role
+  team:
+    displayName: Team
+  relationship:
+    displayName: Relationship

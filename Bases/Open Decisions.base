@@ -1,0 +1,17 @@
+filters:
+  and:
+    - 'file.inFolder("Decisions")'
+    - 'project.toString().contains(this.file.name)'
+    - 'status == "proposed"'
+views:
+  - type: table
+    name: Open Decisions
+    order:
+      - property: date
+properties:
+  status:
+    displayName: Status
+  date:
+    displayName: Date
+  decided-by:
+    displayName: Decided By

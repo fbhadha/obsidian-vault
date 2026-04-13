@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("Meetings")'
+    - 'project.toString().contains(this.file.name)'
+views:
+  - type: table
+    name: Related Meetings
+    order:
+      - property: date
+properties:
+  date:
+    displayName: Date
+  attendees:
+    displayName: Attendees
+  meeting-type:
+    displayName: Type

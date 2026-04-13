@@ -1,0 +1,17 @@
+filters:
+  'file.inFolder("Meetings")'
+views:
+  - type: table
+    name: Recent Meetings
+    limit: 20
+    order:
+      - property: date
+properties:
+  date:
+    displayName: Date
+  project:
+    displayName: Project
+  meeting-type:
+    displayName: Type
+  attendees:
+    displayName: Attendees
