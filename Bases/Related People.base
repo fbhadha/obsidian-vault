@@ -1,7 +1,7 @@
 filters:
   and:
     - 'file.inFolder("People")'
-    - 'this.file.hasLink(file)'
+    - 'this.stakeholders.toString().contains(file.name)'
 views:
   - type: table
     name: Related People
